@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".SaveActivity">
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="11"
+        >
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:background="@drawable/stat_day"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/DistanceSave"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="12.13 \nKm"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/TimeSave"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="50:45\nTemps"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/CaloriesSave"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="5500\nKcal"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/nameActivity"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:inputType="text"
+            android:hint="Nom de l'activité"
+            android:paddingLeft="20dp"
+            android:maxLength="20"
+            android:background="@drawable/activity_end_background"
+
+            />
+
+        <TextView
+            android:id="@+id/Feeling"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="Ressenti de votre activité ?"
+            android:textSize="20sp"
+            android:background="@drawable/stat_day"
+            />
+
+        <RadioGroup
+            android:id="@+id/FeelingGroup"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="3"
+            android:layout_rowWeight="0.5"
+            android:gravity="center"
+            android:background="@drawable/activity_end_background"
+            >
+            <RadioButton
+                android:id="@+id/FeelingReallyBad"
+                android:button="@null"
+                android:background="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:id="@+id/FeelingBad"
+                android:button="@null"
+                android:background="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:id="@+id/FeelingFine"
+                android:button="@null"
+                android:background="@drawable/ic_sentiment_neutral_black_24dpcolor"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:id="@+id/FeelingWell"
+                android:button="@null"
+                android:background="@drawable/ic_sentiment_satisfied_black_24dp"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:id="@+id/FeelingVeryWell"
+                android:button="@null"
+                android:background="@drawable/ic_sentiment_very_satisfied_black_24dp"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/PainBefore"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:text="Niveau de douleur"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/stat_day"
+            android:textColor="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="5"
+            android:layout_rowWeight="1"
+            android:background="@drawable/stat_day"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Avant"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Après"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:background="@drawable/stat_day"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/PainLevelBefore"
+                android:text="0/10"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/PainLevelAfter"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0/10"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/remarkActivity"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:inputType="text"
+            android:hint="Vos remarques"
+            android:paddingLeft="20dp"
+            android:background="@drawable/activity_end_background"
+
+
+            />
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:layout_row="8"
+            android:layout_rowWeight="0.3"
+            android:background="@color/startcolor"
+            >
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enregistrer"
+            android:background="@color/startcolor"
+            android:textColor="#FFFFFF"
+
+            />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</ScrollView>

@@ -1,0 +1,10 @@
+/build
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+/release
+.externalNativeBuild
+google_maps_api.xml

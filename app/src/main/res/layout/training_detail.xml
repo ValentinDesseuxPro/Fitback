@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingDetailActivity"
+    android:background="@drawable/background_color"
+    >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/icon_activity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/running" />
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday Run"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/icon_activity"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/activity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 11, 6:38 PM"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_below="@id/activity_title"
+        android:layout_toRightOf="@id/icon_activity"/>
+
+    <ImageView
+        android:layout_below="@id/icon_activity"
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/fitback_logo"/>
+
+    <TextView
+        android:id="@+id/duree"
+        android:paddingLeft="20dp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"
+        android:text="Durée :  "
+        android:textSize="20sp"
+        android:layout_below="@id/ivMap"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvDuree"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivMap"
+        android:layout_toRightOf="@id/duree"
+        android:text="1h30"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/distance"
+        android:paddingLeft="20dp"
+        android:gravity="left|center"
+        android:text="Distance :  "
+        android:textSize="20sp"
+        android:layout_below="@id/duree"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/tvDist"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvDuree"
+        android:layout_toRightOf="@id/distance"
+        android:text="50.67"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="left|center"/>
+
+    <TextView
+        android:id="@+id/tvDistUnit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvDuree"
+        android:layout_toRightOf="@id/tvDist"
+        android:text=" km"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="left|center"/>
+    <TextView
+        android:id="@+id/calories"
+        android:paddingLeft="20dp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"
+        android:text="Calories :  "
+        android:textSize="20sp"
+        android:layout_below="@id/distance"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvCalo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvDist"
+        android:layout_toRightOf="@id/calories"
+        android:text="5500"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="left|center"/>
+
+    <TextView
+        android:id="@+id/tvCaloUnit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvDistUnit"
+        android:layout_toRightOf="@id/tvCalo"
+        android:text=" kcal"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"/>
+
+    <ImageView
+        android:id="@+id/icon_feeling"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_sentiment_very_satisfied_black_24dp"
+        android:layout_below="@+id/calories"/>
+    <TextView
+        android:id="@+id/activity_feeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Très bon"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/icon_feeling"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvCalo"
+        />
+    <TextView
+        android:id="@+id/activity_pain_after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pieds/Jambes, Respiratoire"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_below="@id/activity_feeling"
+        android:layout_toRightOf="@id/icon_feeling"/>
+    <TextView
+        android:id="@+id/pain_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Niveaux de douleurs"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_below="@id/icon_feeling"
+        android:gravity="center"
+
+        />
+    <LinearLayout
+        android:id="@+id/douleur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pain_level"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border">
+    <TextView
+        android:id="@+id/before"
+        android:text="Avant"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border"
+        />
+        <TextView
+            android:id="@+id/after"
+            android:text="Après"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/douleur"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+        <TextView
+            android:id="@+id/before_level"
+            android:text="7/10"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"
+            />
+        <TextView
+            android:id="@+id/after_level"
+            android:text="8/10"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/remarks"
+        android:paddingLeft="20dp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"
+        android:text="Remarques :  "
+        android:textSize="20sp"
+        android:layout_below="@id/level"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/level"
+        android:layout_toRightOf="@id/remarks"
+        android:text="Aucune"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/remarks">
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Détails de la session"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@color/colorStart"
+        android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

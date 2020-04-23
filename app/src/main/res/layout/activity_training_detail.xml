@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    tools:context=".TrainingDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/fitback_logo"
+        android:background="@drawable/background_color"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMap"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMap"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/tvName"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:text="04/10/2019"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/tvDurationNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:paddingLeft="20sp"
+        android:text="Durée : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@id/tvDurationNote"
+        android:text="1h30"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvDistanceNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDuration"
+        android:paddingLeft="20sp"
+        android:text="Distance : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDuration"
+        android:layout_toRightOf="@id/tvDistanceNote"
+        android:text="50"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDuration"
+        android:layout_toRightOf="@id/tvDistance"
+        android:text="km"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvCaloryNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDistanceNote"
+        android:paddingLeft="20sp"
+        android:text="Calories : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvCalory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDistanceNote"
+        android:layout_toRightOf="@id/tvCaloryNote"
+        android:text="50"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDistanceNote"
+        android:layout_toRightOf="@id/tvCalory"
+        android:text="kcal"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="28sp" />
+
+
+</RelativeLayout>
